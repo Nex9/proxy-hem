@@ -10,8 +10,8 @@ BACKENDS =
 		port: process.env.PORT or argv.port or 9294
 	API:
 		host: 'localhost'
-		port: 4000
-		https: true
+		port: 8080
+		https: false
 
 	
 getBackendForRequest = (req) ->
