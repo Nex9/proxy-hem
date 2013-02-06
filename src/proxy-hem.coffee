@@ -15,7 +15,7 @@ BACKENDS =
 
 	
 getBackendForRequest = (req) ->
-	staticContentTypes = ['js','css','png','gif','ico']
+	staticContentTypes = ['js','css','png','gif','ico', 'otf', 'ttf', 'woff', 'eot', 'svg']
 
 	if req.url is '/' or /^\/lib/.test(req.url) or /^\/images/.test(req.url)
 		return BACKENDS.HEM
